@@ -30,7 +30,7 @@ const Numbers: FC = () => {
   const { data, error, isLoading } = useQuery({
     queryFn: getImpressionsNumberStats,
     queryKey: ['getImpressionsNumberStats'],
-    refetchInterval: 5000
+    refetchInterval: 2500
   });
 
   if (isLoading) {
